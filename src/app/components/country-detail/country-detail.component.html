@@ -1,0 +1,14 @@
+<div class="panel panel-default">  
+  <div class="page-header">    
+    <h3>Details</h3>    
+  </div>
+  <div *ngIf="countryDetails">    
+    <p>Name: {{countryDetails?.name}}</p>
+    <p>Region: {{countryDetails?.region}}</p>
+    <p>Sub-Region: {{countryDetails?.subregion}}</p>
+    <p>Population: {{countryDetails?.population}}</p>
+    <p>Timezones: {{countryDetails?.timezones}}</p>
+    
+  </div>
+  <button class="btn btn-primary" (click)="backToList()">Go back</button>
+</div>
